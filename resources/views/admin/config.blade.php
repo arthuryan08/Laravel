@@ -1,3 +1,8 @@
+@extends('layouts.admin')
+
+@section('title', 'Configurações')
+
+@section('content')
 <h1>Configurações</h1>
 
 Meu nome é {{$nome}}. Eu tenho {{$idade}} anos. <br>
@@ -20,3 +25,4 @@ Versão: {{$versao}}
 
 
 <a href="/config/info">Informações</a>
+@endsection
