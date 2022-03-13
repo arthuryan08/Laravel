@@ -37,7 +37,6 @@ Route::get('/config/user', [ConfigController::class, 'user']);
 
 
 
-
 /*
 Route::view('/teste', 'teste');
 
