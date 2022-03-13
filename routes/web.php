@@ -18,6 +18,7 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/config', [ConfigController::class, 'index']);
+Route::post('/config', [ConfigController::class, 'index']);
 Route::get('/config/user', [ConfigController::class, 'user']);
 
 

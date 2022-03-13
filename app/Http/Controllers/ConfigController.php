@@ -6,11 +6,16 @@ use Illuminate\Http\Request;
 
 class ConfigController extends Controller
 {
-    public function index(){
-        echo "Pagina inicial de configurações...";
+    public function index(Request $request)
+    {
+        //all, input, query
+        $nome = $request->input('nome');
+        echo "blabla" . $nome;
+        return view('config');
     }
 
-    public function user(){
+    public function user()
+    {
         echo "Página de config do usuário...";
     }
 }
