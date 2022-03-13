@@ -11,10 +11,20 @@ class ConfigController extends Controller
     {
         $nome = 'Arthur';
         $idade = 23;
+        $cidade = $request->input('cidade');
+
+        $lista = [
+            ['nome'=>'farinha', 'qt'=>'2'],
+            ['nome'=>'ovo', 'qt'=>'4'],
+            ['nome'=>'açucar', 'qt'=>'1'],
+            ['nome'=>'manteiga', 'qt'=>'1'],
+        ];
 
         $data = [
             'nome' => $nome,
-            'idade' => $idade
+            'idade' => $idade,
+            'cidade' => $cidade,
+            'lista' => $lista
         ];
 
         return view('admin.config', $data);
