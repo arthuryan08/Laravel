@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ConfigController;
+use App\Http\Controllers\Admin\ConfigController;
 use App\Http\Controllers\HomeController;
 
 /*
@@ -19,7 +19,8 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/config', [ConfigController::class, 'index']);
 Route::post('/config', [ConfigController::class, 'index']);
-Route::get('/config/user', [ConfigController::class, 'user']);
+Route::get('/config/info', [ConfigController::class, 'info']);
+Route::get('/config/permissoes', [ConfigController::class, 'permissoes']);
 
 
 
